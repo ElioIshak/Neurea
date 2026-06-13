@@ -12,8 +12,8 @@ class DiceScore(nn.Module):
 
         preds = (preds > self.threshold).float()
 
-        preds = preds.view(-1)
-        target = target.view(-1)
+        preds = preds.reshape(-1)
+        target = target.reshape(-1)
 
         intersection = (preds * target).sum()
 
@@ -33,8 +33,8 @@ class IoU(nn.Module):
 
         preds = (preds > self.threshold).float()
 
-        preds = preds.view(-1)
-        target = target.view(-1)
+        preds = preds.reshape(-1)
+        target = target.reshape(-1)
 
         intersection = (preds * target).sum()
         union = preds.sum() + target.sum() - intersection

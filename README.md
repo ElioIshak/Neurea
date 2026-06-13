@@ -5,6 +5,8 @@
 
 Neurea is a PyTorch project for brain tumor segmentation using a U-Net model on the BraTS2020 dataset. It includes a custom dataset loader for HDF5 files, a train/validation split utility, Dice loss, Dice score and IoU metrics, model checkpointing, and training history visualization.
 
+![MRI Scans](results/MRI%20Scans.png)
+
 ## Features
 
 - U-Net architecture for 2D medical image segmentation
@@ -19,28 +21,29 @@ Neurea is a PyTorch project for brain tumor segmentation using a U-Net model on 
 
 ```text
 Neurea/
-|-- .env                    # Path configuration
+|-- .env                     # Path configuration
 |-- .gitignore
-|-- LICENSE                 # MIT License
+|-- LICENSE                  # MIT License
 |-- data/
-|   |-- dataset.py          # BraTS HDF5 dataset loader
-|   `-- split.py            # Volume-aware train/validation split
+|   |-- dataset.py           # BraTS HDF5 dataset loader
+|   `-- split.py             # Volume-aware train/validation split
 |-- losses/
-|   `-- losses.py           # Dice loss
+|   `-- losses.py            # Dice loss
 |-- metrics/
-|   `-- metrics.py          # Dice score and IoU metrics
+|   `-- metrics.py           # Dice score and IoU metrics
 |-- models/
-|   `-- unet.py             # U-Net model implementation
+|   `-- unet.py              # U-Net model implementation
 |-- results/
-|   |-- history.csv         # Training history log
-|   |-- plot_history.py     # Standalone plotting from saved CSV
-|   `-- training_history.png# Saved training curves plot
+|   |-- history.csv          # Training history log
+|   |-- MRI Scans.png        # Evaluation of the model (MRI SCANS)
+|   |-- plot_history.py      # Plotting from saved CSV
+|   `-- training_history.png # Saved training curves plot
 |-- utils/
-|   |-- load_model.py       # Model loading helper
-|   |-- plot.py             # Training history plots
-|   `-- train.py            # Training and validation loop
-|-- main.py                 # Main training entry point
-`-- requirements.txt        # Python dependencies
+|   |-- load_model.py        # Model loading helper
+|   |-- plot.py              # Training history plots
+|   `-- train.py             # Training and validation loop
+|-- main.py                  # Main training entry point
+`-- requirements.txt         # Python dependencies
 ```
 
 ## Requirements
@@ -61,7 +64,7 @@ pip install -r requirements.txt
 
 ## Configuration
 
-Paths are configured in the `.env` file (not committed — see `.gitignore`):
+Paths are configured in the `.env` file:
 
 ```env
 DATA_PATH=./data/BraTS2020_training_data
