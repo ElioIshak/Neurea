@@ -126,6 +126,8 @@ Training and validation are tracked with:
 
 Training curves are plotted after training using Matplotlib.
 
+![Training History](results/training_history.png)
+
 ## Notes
 
 - All paths are loaded from the `.env` file at runtime.
