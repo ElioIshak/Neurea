@@ -1,0 +1,25 @@
+# Environments
+.env
+.venv/
+.venv-1/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Data
+data/BraTS2020_training_data/
+data/metadata/
+
+# Models & checkpoints
+saved_models/
+best_model.pth
+
+# IDE
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store

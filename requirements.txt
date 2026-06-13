@@ -1,0 +1,7 @@
+# requirements
+torch
+h5py
+matplotlib
+tqdm
+python-dotenv
+pandas
