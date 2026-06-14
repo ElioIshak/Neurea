@@ -1,6 +1,7 @@
 # Neurea
 
 **Author**: Elio Ishak
+
 **Last time modified**: 6/13/2026
 
 Neurea is a PyTorch project for brain tumor segmentation using a U-Net model on the BraTS2020 dataset. It includes a custom dataset loader for HDF5 files, a train/validation split utility, Dice loss, Dice score and IoU metrics, model checkpointing, and training history visualization.
